@@ -3,9 +3,9 @@ var React = require('react');
 module.exports = React.createClass({
 	render: function() {
         var displayDescription = '';
-        var completed = this.props.todo.get('completed').toString();
+        var completed = this.props.todo.get('completed');
 
-        if(completed === 'false') {
+        if(completed === false) {
             displayDescription = (
                     <td style={{textDecoration: 'line-through'}}>{this.props.todo.get('description')}</td>
             );

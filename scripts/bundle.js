@@ -32911,9 +32911,9 @@ module.exports = React.createClass({
 
     render: function render() {
         var displayDescription = '';
-        var completed = this.props.todo.get('completed').toString();
+        var completed = this.props.todo.get('completed');
 
-        if (completed === 'false') {
+        if (completed === false) {
             displayDescription = React.createElement(
                 'td',
                 { style: { textDecoration: 'line-through' } },
