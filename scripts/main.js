@@ -1,10 +1,12 @@
 'use strict';
 var React = require('react');
 var Backbone = require('backbone');
+
 var CatList = require('./components/CatListComponent');
 var ProductList = require('./components/ProductListComponent');
 var QuarterbackList = require('./components/QuarterbackListComponent');
 var TodoList = require('./components/TodoListComponent');
+
 var catData = require('./data/cats');
 var productData = require('./data/products');
 var quarterbackData = require('./data/quarterbacks');

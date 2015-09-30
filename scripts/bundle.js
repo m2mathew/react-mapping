@@ -32614,6 +32614,10 @@ module.exports = React.createClass({
 	displayName: 'exports',
 
 	render: function render() {
+		var catRows = this.props.cats.map(function (cat) {
+			return React.createElement(CatComponent, { cat: cat });
+		});
+
 		return React.createElement(
 			'div',
 			{ className: 'row' },
@@ -32648,7 +32652,11 @@ module.exports = React.createClass({
 						)
 					)
 				),
-				React.createElement('tbody', null)
+				React.createElement(
+					'tbody',
+					null,
+					catRows
+				)
 			)
 		);
 	}
@@ -32942,10 +32950,12 @@ module.exports = new TodoCollection([{ description: 'do dishes', completed: fals
 'use strict';
 var React = require('react');
 var Backbone = require('backbone');
+
 var CatList = require('./components/CatListComponent');
 var ProductList = require('./components/ProductListComponent');
 var QuarterbackList = require('./components/QuarterbackListComponent');
 var TodoList = require('./components/TodoListComponent');
+
 var catData = require('./data/cats');
 var productData = require('./data/products');
 var quarterbackData = require('./data/quarterbacks');
