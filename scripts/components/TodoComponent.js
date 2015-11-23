@@ -23,7 +23,3 @@ module.exports = React.createClass({
         );
 	}
 })
-
-
-// <td>{this.props.todo.get('completed').toString()}</td>
-// the way to make the boolean value appear on screen

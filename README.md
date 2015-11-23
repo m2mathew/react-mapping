@@ -1,5 +1,9 @@
 # React Mapping Exercises
 
+Assignment from The Iron Yard-Austin
+
+Week 6 - day 23
+
 ## Description
 Display the data in tables or lists.
 
@@ -30,11 +34,3 @@ After completing this assignment, you be able to effectively use
 
 ## Normal Mode
 Fork and clone this repository. Update the Cats, Products, Quarterbacks and Todos to display the data in the data directory. Most, if not all, of the work you will do will be in the scripts/components/****ListComponent.js files.
-
-## Notes
-
-Notes go here...
-
-## Additional Resources
-
-* Read []()
